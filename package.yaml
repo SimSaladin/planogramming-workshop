@@ -1,0 +1,45 @@
+name: planogramming
+version: 0.0.0
+
+dependencies:
+- base
+- aeson
+- bytestring
+- containers
+- directory
+- elm-export
+- filepath
+- http-types
+- random
+- time
+- unordered-containers
+- wai
+- wai-websockets
+- warp
+- websockets
+
+library:
+  source-dirs:
+  - shared
+  - server
+
+executables:
+  planogramming-server:
+    main: Main.hs
+    source-dirs:
+    - shared
+    - server
+    ghc-options:
+    - -O2
+    - -threaded
+    - -with-rtsopts=-N
+  planogramming-code-generator:
+    main: Main.hs
+    source-dirs:
+    - shared
+    - code-generator
+  planogramming-hs-client:
+    main: Main.hs
+    source-dirs:
+    - shared
+    - hs-client

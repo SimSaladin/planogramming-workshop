@@ -1,0 +1,10 @@
+resolver: lts-10.3
+
+packages:
+- location: '.'
+
+- location: # elm-export, with sum encoders fixed (patched by FPTje)
+    git: https://github.com/SimSaladin/elm-export
+    commit: "5862351"
+  extra-dep: true
+
