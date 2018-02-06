@@ -15,6 +15,14 @@ elm make src/Main.elm
 ```
 Open up `client/index.html` in a browser.
 
+### What then?
+
+- client/src/Api.elm - generated file, defines Api - don't modify.
+- client/src/MAin.elm - main entry point (probably don't need to modify)
+- client/src/Model.elm - the model and messages (see Elm documentation for what is model or message in FRP)
+- client/src/State.elm - update function(s) - what is done when new message is received
+- client/src/View.elm - view functions (what is shown on the page)
+
 ## Haskell client
 
 Source: `hs-client/`.
